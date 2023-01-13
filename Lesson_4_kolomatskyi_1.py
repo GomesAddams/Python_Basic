@@ -1,92 +1,65 @@
 #TASK_1
 
+def check_range(num_x, from_num=0):
+    if num_x in range(from_num, to_num):
+        return (bool(num_x))
+    else:
+        return (bool(num_x))
 print("Введіть першу межу діапазона: ")
-
-a = input()
-
-if not a:
-
-    a = 0
-
+from_num = input()
 print("Введіть другу межу діапазона: ")
-
-b = input()
-
-range_x = range(int(a), int(b))
-
+to_num = input()
 print("Введіть будьяке число: ")
+num_x = input()
+print(bool(num_x))
 
-x = input()
-
-if int(x) in range_x:
-
-    print(x, bool(x))
-
-else:
-
-    print(x, bool(False))
 
 
 #TASK_2
 
-arithmetic = {"a": 4, "b": 5}
+def arithmetic(a, b, operation):
+    if operation == '+':
+        return a + b
+    elif operation == '-':
+        return a - b
+    elif operation == '*':
+        return a * b
+    elif operation == '/':
+        return a / b
+    elif operation == '**':
+        return a ** b
+    elif operation == '%':
+        return a % b
+    elif operation == '//':
+        return a // b
+    else:
+        return 'Operation cannot be reversed'
 
-def summ(a, b):
-
-    return a + b
-
-print(summ(**arithmetic))
-
-def subtraction(a, b):
-
-    return a - b
-
-print(subtraction(**arithmetic))
-
-def multiplication(a, b):
-
-    return a * b
-
-print(multiplication(**arithmetic))
-
-def division(a, b):
-
-    return a / b
-
-print(division(**arithmetic))
-
-def modulus(a, b):
-
-    return a % b
-
-print(modulus(**arithmetic))
-
-def exponentiation(a, b):
-
-    return a ** b
-
-print(exponentiation(**arithmetic))
-
-def floor_division(a, b):
-
-    return a // b
-
-print(floor_division(**arithmetic))
+print(arithmetic(a=2, b=3, operation='+'))
+print(arithmetic(a=2, b=3, operation='-'))
+print(arithmetic(a=2, b=3, operation='*'))
+print(arithmetic(a=2, b=3, operation='/'))
+print(arithmetic(a=2, b=3, operation='**'))
+print(arithmetic(a=2, b=3, operation='%'))
+print(arithmetic(a=2, b=3, operation='//'))
+print(arithmetic(a=2, b=3, operation='^'))
 
 #TASK_3
 
 
 print("Введіть будьяке слово: ")
 
-word = input()
+word_x = input()
 
-if str(word) == str(word)[::-1]:
+def is_palindrome(word_x):
 
-    print("Palindrome")
+    if str(word_x) == str(word_x)[::-1]:
 
-else:
+        print("Palindrome")
 
-    print("Not Palindrome")
+    else:
+
+        print("Not Palindrome")
 
 
 #TASK_4
@@ -94,6 +67,8 @@ else:
 print("Введіть будьяку стрічку: ")
 
 word_str = input()
+
+def spec_char(word_str):
 
 if __name__ == '__main__':
 
@@ -103,6 +78,3 @@ if __name__ == '__main__':
 
     res = s.translate(str.maketrans('', '', chars))
     print(res)
-
-
-
