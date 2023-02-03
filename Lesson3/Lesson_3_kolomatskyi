@@ -1,0 +1,48 @@
+#TASK_1
+
+import random
+
+print(dir(random))
+
+min = (random.randint(0, 59))
+
+print(min)
+
+
+if (0 <= min and min < 15) :
+
+    print("Число знаходиться у першій чверті")
+
+elif (16 <= min and min < 30) :
+
+    print("Число знаходиться у другій чверті")
+
+elif (31 <= min and min < 45) :
+
+    print("Число знаходиться у третій чверті")
+
+elif (46 <= min and min <= 59) :
+
+    print("Число знаходиться у четвертій чверті")
+
+#TASK_2
+
+print("Введіть номер місяця вашого народження: ")
+
+birth_month = int(input())
+
+if birth_month = 1 or 2 or 12:
+
+    print("Зима - За вікном падав сніг.")
+
+elif birth_month = 3 or 4 or 5:
+
+    print("Весна - Все довкола розцвітало.")
+
+elif birth_month = 6 or 7 or 8:
+
+    print("Літо - Діти насолоджувались літніми канікулами.")
+
+elif birth_month = 9 or 10 or 11:
+
+    print("Літо - Діти насолоджувались літніми канікулами.")
