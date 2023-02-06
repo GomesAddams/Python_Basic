@@ -1,0 +1,5 @@
+
+
+Finally, the code uses a try-except block to handle any exceptions that might be raised by the function, including both the custom ExceptionLineTooLong and the more general Exception.
+
+This code defines the new exception ExceptionLineTooLong and implements a function read_file_with_line_limit that reads all lines in a file and throws an ExceptionLineTooLong exception when a line in the file is longer than 80 characters.
